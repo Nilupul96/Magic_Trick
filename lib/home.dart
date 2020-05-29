@@ -16,7 +16,14 @@ class _Home extends  State <Home>{
   @override
   Widget build(BuildContext context) {
    return Scaffold(
-    body:Column(
+    body:Container(
+       decoration:BoxDecoration(
+          image:DecorationImage(
+              image: AssetImage('images/background.jpg'),
+              fit: BoxFit.cover
+          )
+        ) ,
+    child:Column(
     children: <Widget>[
       //first column
       Row(
@@ -35,7 +42,7 @@ class _Home extends  State <Home>{
             margin:EdgeInsets.only(top:30,left:20.0,right: 20,bottom: 10),
             height:60.0,
             width:40.0,
-            color:Colors.red
+           color:Colors.red
           ),
           ),
           
@@ -413,7 +420,7 @@ class _Home extends  State <Home>{
         ],
         
       ),
-    Text("select your column"),
+   // Text("select your Row"),
     //user selection button
      Row(
       children: <Widget>[
@@ -478,23 +485,18 @@ class _Home extends  State <Home>{
     )
     ],
     )
+    )
     );
   }
-
-  //result method
+ //result method
   void result(value){
     value=b4;
      switch (clickCounter) {
             case 3:
-              Navigator.push(context,MaterialPageRoute(builder: (context)
-              {
-                return Result(value: value);
-              }));
+              Navigator.push(context,MaterialPageRoute(builder: (context)=>Result(value: value)
+              ));
               break;
-
           }
-  }
-
-    
+  }  
   }
   
