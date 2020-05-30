@@ -1,9 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:magic_trick/home.dart';
+import 'package:magic_trick/start.dart';
+import 'dart:io';
 //import 'package:magic_trick/home.dart';
-class Result extends StatelessWidget{
+class Result extends StatefulWidget{
   final value;
   Result({this.value});
+  @override
+  State<StatefulWidget> createState() {
+    return _Result(value);
+  }
+  
+}
+
+class _Result extends State<Result>{
+  var value;
+  _Result(this.value);
   @override
   Widget build(BuildContext context) {
     
@@ -30,7 +41,7 @@ class Result extends StatelessWidget{
               ),
               ),  
             ),
-
+          //result showing container
             Container(
               margin: EdgeInsets.all(50),
               padding: EdgeInsets.all(20),
@@ -41,13 +52,13 @@ class Result extends StatelessWidget{
               child:Text("$value",
               style: TextStyle(
                   color:Colors.white,
-                  fontSize: 40.0,
+                  fontSize: 70.0,
                   fontWeight:FontWeight.w800
               ),
               )
               )
             ),
-
+          //try again button
             RaisedButton(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20)
@@ -62,9 +73,46 @@ class Result extends StatelessWidget{
               color: Colors.yellow,
               padding: EdgeInsets.only(top:15,bottom: 15,left:40,right:40),
               onPressed: (){
-                Navigator.push(context,MaterialPageRoute(builder:(context)=>Home()));
+                Navigator.push(context,MaterialPageRoute(builder:(context)=>Start()));
+              }
+            ),
+          //quit button
+            Container(
+              margin: EdgeInsets.only(top:30.0),
+               child:RaisedButton(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20)
+                     ),
+                      child: Text("quit",
+                       style: TextStyle(
+                                  color:Colors.black,
+                                  fontWeight:FontWeight.w900,
+                                  fontSize:20,
+                                ),
+                                ),
+                  color: Colors.yellow,
+                  padding: EdgeInsets.only(top:10,bottom: 10,left:65,right:65),
+                 onPressed: (){
+                setState(() {
+                   showDialog(context: context,
+                   builder:(context)=>AlertDialog(
+                    title: Text('Do you want to exit ?'),
+                    actions: <Widget>[
+                    FlatButton(onPressed:()=>Navigator.pop(context,false), 
+                    child:Text("No")
+                     ),
+
+                    FlatButton(onPressed:()=>exit(0), 
+                    child:Text("yes")
+                     )
+              ],
+             )
+             );
+                });
               }
             ) 
+            )
+
         ]
       )
         )

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:magic_trick/result.dart';
 import 'package:magic_trick/start.dart';
+
 
 
 void main() => runApp(MyApp());

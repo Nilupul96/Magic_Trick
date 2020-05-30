@@ -24,6 +24,7 @@ class _Home extends  State <Home>{
           )
         ) ,
     child:Column(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
     children: <Widget>[
       //first column
       Row(
@@ -96,7 +97,7 @@ class _Home extends  State <Home>{
             ),
             )
             ),
-            margin:EdgeInsets.only(top:10,left:20.0,right:20,bottom: 10),
+            margin:EdgeInsets.only(left:20.0,right:20,bottom: 10),
             height:60.0,
             width:40.0,
             color:Colors.red
@@ -113,7 +114,7 @@ class _Home extends  State <Home>{
             ),
             )
             ),
-            margin:EdgeInsets.only(top:10,left:20.0,right:20,bottom: 10),
+            margin:EdgeInsets.only(left:20.0,right:20,bottom: 10),
             height:60.0,
             width:40.0,
             color:Colors.red
@@ -130,7 +131,7 @@ class _Home extends  State <Home>{
             ),
             )
             ),
-            margin:EdgeInsets.only(top:10,left:20.0,right:20,bottom: 10),
+            margin:EdgeInsets.only(left:20.0,right:20,bottom: 10),
             height:60.0,
             width:40.0,
             color:Colors.red
@@ -152,7 +153,7 @@ class _Home extends  State <Home>{
             ),
             )
             ),
-              margin:EdgeInsets.only(top:10,left:20.0,right:20,bottom: 10),
+              margin:EdgeInsets.only(left:20.0,right:20,bottom: 10),
             height:60.0,
             width:40.0,
             color:Colors.red
@@ -169,7 +170,7 @@ class _Home extends  State <Home>{
             ),
             )
             ),
-              margin:EdgeInsets.only(top:10,left:20.0,right:20,bottom: 10),
+              margin:EdgeInsets.only(left:20.0,right:20,bottom: 10),
             height:60.0,
             width:40.0,
             color:Colors.red
@@ -186,7 +187,7 @@ class _Home extends  State <Home>{
             ),
             )
             ),
-              margin:EdgeInsets.only(top:10,left:20.0,right:20,bottom: 10),
+              margin:EdgeInsets.only(left:20.0,right:20,bottom: 10),
             height:60.0,
             width:40.0,
             color:Colors.red
@@ -209,7 +210,7 @@ class _Home extends  State <Home>{
             ),
             )
             ),
-              margin:EdgeInsets.only(top:10,left:20.0,right:20,bottom: 10),
+              margin:EdgeInsets.only(left:20.0,right:20,bottom: 10),
             height:60.0,
             width:40.0,
             color:Colors.red
@@ -226,7 +227,7 @@ class _Home extends  State <Home>{
             ),
             )
             ),
-             margin:EdgeInsets.only(top:10,left:20.0,right:20,bottom: 10),
+             margin:EdgeInsets.only(left:20.0,right:20,bottom: 10),
             height:60.0,
             width:40.0,
             color:Colors.red
@@ -243,7 +244,7 @@ class _Home extends  State <Home>{
             ),
             )
             ),
-              margin:EdgeInsets.only(top:10,left:20.0,right:20,bottom: 10),
+              margin:EdgeInsets.only(left:20.0,right:20,bottom: 10),
             height:60.0,
             width:40.0,
             color:Colors.red
@@ -265,7 +266,7 @@ class _Home extends  State <Home>{
             ),
             )
             ),
-             margin:EdgeInsets.only(top:10,left:20.0,right:20,bottom: 10),
+             margin:EdgeInsets.only(left:20.0,right:20,bottom: 10),
             height:60.0,
             width:40.0,
             color:Colors.red
@@ -282,7 +283,7 @@ class _Home extends  State <Home>{
             ),
             )
             ),
-             margin:EdgeInsets.only(top:10,left:20.0,right:20,bottom: 10),
+             margin:EdgeInsets.only(left:20.0,right:20,bottom: 10),
             height:60.0,
             width:40.0,
             color:Colors.red
@@ -299,7 +300,7 @@ class _Home extends  State <Home>{
             ),
             )
             ),
-             margin:EdgeInsets.only(top:10,left:20.0,right:20,bottom: 10),
+             margin:EdgeInsets.only(left:20.0,right:20,bottom: 10),
             height:60.0,
             width:40.0,
             color:Colors.red
@@ -321,7 +322,7 @@ class _Home extends  State <Home>{
             ),
             )
             ),
-             margin:EdgeInsets.only(top:10,left:20.0,right:20,bottom: 10),
+             margin:EdgeInsets.only(left:20.0,right:20,bottom: 10),
             height:60.0,
             width:40.0,
             color:Colors.red
@@ -338,7 +339,7 @@ class _Home extends  State <Home>{
             ),
             )
             ),
-              margin:EdgeInsets.only(top:10,left:20.0,right:20,bottom: 10),
+              margin:EdgeInsets.only(left:20.0,right:20,bottom: 10),
             height:60.0,
             width:40.0,
             color:Colors.red
@@ -355,7 +356,7 @@ class _Home extends  State <Home>{
             ),
             )
             ),
-              margin:EdgeInsets.only(top:10,left:20.0,right:20,bottom: 10),
+              margin:EdgeInsets.only(left:20.0,right:20,bottom: 10),
             height:60.0,
             width:40.0,
             color:Colors.red
@@ -377,7 +378,7 @@ class _Home extends  State <Home>{
             ),
             )
             ),
-             margin:EdgeInsets.only(top:10,left:20.0,right:20,bottom: 10),
+             margin:EdgeInsets.only(left:20.0,right:20,bottom: 10),
             height:60.0,
             width:40.0,
             color:Colors.red
@@ -394,7 +395,7 @@ class _Home extends  State <Home>{
             ),
             )
             ),
-              margin:EdgeInsets.only(top:10,left:20.0,right:20,bottom: 10),
+              margin:EdgeInsets.only(left:20.0,right:20,bottom: 10),
             height:60.0,
             width:40.0,
             color:Colors.red
@@ -411,7 +412,7 @@ class _Home extends  State <Home>{
             ),
             )
             ),
-              margin:EdgeInsets.only(top:10,left:20.0,right:20,bottom: 10),
+              margin:EdgeInsets.only(left:20.0,right:20,bottom: 10),
             height:60.0,
             width:40.0,
             color:Colors.red
@@ -421,10 +422,13 @@ class _Home extends  State <Home>{
         
       ),
    // Text("select your Row"),
+
     //user selection button
      Row(
       children: <Widget>[
-        Container(
+        //button A
+       Expanded(
+       child: Container(
         margin: EdgeInsets.only(left:20,right:20),
         child:RaisedButton(child: Text('A'), 
         padding: EdgeInsets.all(20.0),
@@ -435,17 +439,17 @@ class _Home extends  State <Home>{
           aa1=a1;aa2=a2;aa3=a3;aa4=a4;aa5=a5;aa6=a6;aa7=a7;bb1=b1;bb2=b2;bb3=b3;bb4=b4;bb5=b5;bb6=b6;bb7=b7;cc1=c1;cc2=c2;cc3=c3;cc4=c4;cc5=c5;cc6=c6;cc7=c7;
           a1=bb1; a2=bb4;a3=bb7;a4=aa3;a5=aa6;a6=cc2;a7=cc5;b1=bb2;b2=bb5;b3=aa1;b4=aa4;b5=aa7;b6=cc3;b7=cc6;c1=bb3;c2=bb6;c3=aa2;c4=aa5;c5=cc1;c6=cc4;c7=cc7;
           clickCounter++;
-           debugPrint("$clickCounter $b4");
            return result(b4);
         });
           
         },
         )
+        )
         ),
-        
-
-        Container(
-        margin: EdgeInsets.only(left:30,right:30),
+       //Button B 
+      Expanded(
+        child:Container(
+        margin: EdgeInsets.only(left:20,right:20),
         child:RaisedButton(child: Text('B'), 
         padding: EdgeInsets.all(20.0),
         color:Colors.blue,
@@ -455,15 +459,15 @@ class _Home extends  State <Home>{
               aa1=a1;aa2=a2;aa3=a3;aa4=a4;aa5=a5;aa6=a6;aa7=a7;bb1=b1;bb2=b2;bb3=b3;bb4=b4;bb5=b5;bb6=b6;bb7=b7;cc1=c1;cc2=c2;cc3=c3;cc4=c4;cc5=c5;cc6=c6;cc7=c7;
               a1=aa1; a2=aa4;a3=aa7;a4=bb3;a5=bb6;a6=cc2;a7=cc5;b1=aa2;b2=aa5;b3=bb1;b4=bb4;b5=bb7;b6=cc3;b7=cc6;c1=aa3;c2=aa6;c3=bb2;c4=bb5;c5=cc1;c6=cc4;c7=cc7;
               clickCounter++;
-              debugPrint("$clickCounter $b4");
               return result(b4);
             });
         }
         )
-        ),
-
-        Container(
-        margin: EdgeInsets.only(left:30,right:10),
+        )
+      ),
+        //Button c
+        Expanded(child:Container(
+        margin: EdgeInsets.only(left:20,right:20),
         child:RaisedButton(child: Text('C'), 
         padding: EdgeInsets.all(20.0),
         color:Colors.blue,
@@ -473,10 +477,10 @@ class _Home extends  State <Home>{
           aa1=a1;aa2=a2;aa3=a3;aa4=a4;aa5=a5;aa6=a6;aa7=a7;bb1=b1;bb2=b2;bb3=b3;bb4=b4;bb5=b5;bb6=b6;bb7=b7;cc1=c1;cc2=c2;cc3=c3;cc4=c4;cc5=c5;cc6=c6;cc7=c7;
            a1=aa1; a2=aa4;a3=bb7;a4=cc3;a5=cc6;a6=bb2;a7=bb5;b1=aa2;b2=aa5;b3=cc1;b4=cc4;b5=cc7;b6=bb3;b7=bb6;c1=aa3;c2=aa6;c3=cc2;c4=cc5;c5=bb1;c6=bb4;c7=bb7;
           clickCounter++;
-          debugPrint("$clickCounter $b4");
           return result(b4);
         });
         },
+        )
         )
         ),
 
@@ -487,10 +491,13 @@ class _Home extends  State <Home>{
     )
     )
     );
+
+    
   }
  //result method
   void result(value){
     value=b4;
+    
      switch (clickCounter) {
             case 3:
               Navigator.push(context,MaterialPageRoute(builder: (context)=>Result(value: value)

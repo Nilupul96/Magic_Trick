@@ -1,11 +1,36 @@
+
 import 'package:flutter/material.dart';
 import 'package:magic_trick/home.dart';
-class Start extends StatelessWidget{
+
+class Start extends StatefulWidget {
   @override
+  _StartState createState() => _StartState();
+}
+
+class _StartState extends State<Start> {
+  Future<bool> _onBackPressed(){
+      return showDialog(context: context,
+      builder:(context)=>AlertDialog(
+        title: Text('Do you want to exit ?'),
+        actions: <Widget>[
+          FlatButton(onPressed:()=>Navigator.pop(context,false), 
+          child:Text("No")
+          ),
+         FlatButton(onPressed:()=>Navigator.pop(context,true), 
+          child:Text("yes")
+          )
+
+        ],
+      )
+      );
+  }
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return 
+   MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:Container(
+      home:WillPopScope(
+        onWillPop: _onBackPressed,
+        child:Container(
         decoration:BoxDecoration(
           image:DecorationImage(
               image: AssetImage('images/start.jpg'),
@@ -37,8 +62,9 @@ class Start extends StatelessWidget{
         ),
         )
         )
-    );
+    ));
   }
   
-}
+  }
+
   
